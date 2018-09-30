@@ -6,12 +6,13 @@ end
 if int ==2 
 return true 
 end 
-array= (2..int.abs).to_a 
- array.each do |x|
-   int/(x)
-   if (x> 1 && int% x == 0)
-     return false
-   else return true 
-   end 
+
+counter = 2
+while counter < int 
+if int% counter ==0
+return false 
+end 
+counter +=1
  end
+ return true  
  end 
